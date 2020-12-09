@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal quiz login</title>
+    <link type="text/css" rel="stylesheet" href="styles.css" media="screen" />
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+
+</head>
+<body>
+    <div id="wapper">
+    <header>
+    <h1>Animal quiz</h1>
+</header>
+
+
+    <h2>Enter your email</h2>
+
+    <input id="email-field" type="text" placeholder="email">
+
+    <h2> enter new password</h2>
+
+    <input id="password-field" type="text" placeholder="password">
+
+    <input id="confirmpass-field" type="text" placeholder="Confirm password">
+
+    <button id="createUser" onclick="handleSignUp()">sign up</button>
+
+    <button id="startQuiz" onclick="goToQuiz()">start quiz</button>
+
+    <script src="sign-in.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, main, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, main, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* end of Eric Meyer's Reset CSS */
+
+body{
+ 
+  background-image: url(Images/blurred-leaves.jpg);
+}
+
+a {
+  text-decoration: none;
+}
+
+#wapper {
+    max-width: 65rem;
+    margin: 1rem auto 1rem auto;
+    background-color: #dbf3fa;
+    color: #000;
+  
+}
+
+select {
+    margin: 1rem 48% 0.5rem 48%;
+}
+
+ main button {
+    margin: 0.5rem 0rem 1rem 48%;
+}
+button#createUser {
+    margin: 0rem 0 0rem 42%;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 1.4rem;
+}
+
+main h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    border-top: 2px solid black;
+}
+
+h2{
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+input {
+   margin: 0.2rem 40% 0.2rem 42%;
+   display: block;
+   
+}
+
+#startQuiz {
+  display: none;
+}
+
+p#score {
+  font-size: 2rem;
+  text-align: center;
+
+}
+
+p#percent {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h1#finscore {
+
+  padding: 1rem ;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+button#tryagain {
+  /* Try again button */
+  margin: 0.5rem 0rem 1rem 48%;
+ 
+}
+
+
+
+button#startQuiz {
+  margin-bottom: 2rem;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #dbdbdb;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%; /* Could be more or less, depending on screen size */
+    text-align: center;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* ean of The Modal (background) */

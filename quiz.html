@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal quiz</title>
+    <link type="text/css" rel="stylesheet" href="styles.css" media="screen" />
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBecH2HgmxW84zZPdZR2c5DnN8yLKX0xBk",
+    authDomain: "animal-quiz-24eae.firebaseapp.com",
+    databaseURL: "https://animal-quiz-24eae.firebaseio.com",
+    projectId: "animal-quiz-24eae",
+    storageBucket: "animal-quiz-24eae.appspot.com",
+    messagingSenderId: "385679238200",
+    appId: "1:385679238200:web:e52ff3a03acb14e5c9b2cd"
+  };
+ 
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+</script>
+</head>
+<body>
+
+ <div id="wapper">
+
+  <header>
+
+    <h1>Animal quiz</h1>
+
+  </header>
+
+  <main>
+  
+    <div id="questions">
+<!-- Well pull questions from database So that you can add and delete questions straight from there-->
+    </div>
+
+  
+
+  <button id="finQuiz">finish quiz</button>
+</main>
+  
+
+      <!-- MODAL POPUP-->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="msg"></p>
+      </div>
+
+    </div>
+
+  </div>
+  <script src="quiz-app.js"></script>
+</body>
+
+</html>
+
